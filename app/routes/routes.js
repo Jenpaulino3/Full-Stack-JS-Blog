@@ -10,9 +10,9 @@
 		app.get(r.home, controllers.pages.home);
 		app.get(r.login, controllers.pages.login);
 
-		app.get(r.index, controllers.session, controllers.pages.index );
+		app.get(r.index, controllers.pages.index);
 
-		app.get(r.post, controllers.session, controllers.pages.post);
+		app.get(r.post, controllers.pages.post);
 		app.get(r.create, controllers.session, controllers.blogCtrl.createPage);
 		app.get(r.update, controllers.session, controllers.blogCtrl.updatePage);
 
